@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+			<title> Intro to Javascript </title>
+			
+			<script>
+					function add2Numbers()
+					{
+						var numA = document.getElementById('num1').value * 1.0;
+						var numB = document.getElementById('num2').value * 1.0;
+						document.getElementById("result").innerHTML= numA+numB;
+					}	
+			</script>
+			<script>
+					function subtrac2Numbers()
+					{
+						var numA = document.getElementById('num1').value * 1.0;
+						var numB = document.getElementById('num2').value * 1.0;
+						document.getElementById("result").innerHTML= numA-numB;
+					}	
+			</script>
+			<script>
+					function mult2Numbers()
+					{
+						var numA = document.getElementById('num1').value * 1.0;
+						var numB = document.getElementById('num2').value * 1.0;
+						document.getElementById("result").innerHTML= numA*numB;
+					}	
+			</script>
+				<script>
+					function div2Numbers()
+					{
+						var numA = document.getElementById('num1').value * 1.0;
+						var numB = document.getElementById('num2').value * 1.0;
+						document.getElementById("result").innerHTML= numA/numB;
+					}	
+			</script>
+			<script>
+					function avr2Numbers()
+					{
+						var numA = document.getElementById('num1').value * 1.0;
+						var numB = document.getElementById('num2').value * 1.0;
+						document.getElementById("result").innerHTML= (numA+numB)/2;
+					}	
+			</script>
+			<script>
+					function pot()
+					{
+						var numA = document.getElementById('num1').value * 1.0;
+						var numB = document.getElementById('num2').value * 1.0;
+						document.getElementById("result").innerHTML=Math.pow(numA ,	numB);
+					}	
+			</script>
+			<script>
+					function root()
+					{
+						var numA = document.getElementById('num1').value * 1.0;
+						var numB = document.getElementById('num2').value * 1.0;
+						document.getElementById("result").innerHTML=numA**(1/numB);
+					}	
+			</script>
+	
+	</head>
+	<body>
+		<h1 id="myheading">
+			This is a heading for Javascript 
+		</h1>
+		<form>
+			<label for="num1">First number:</label>
+			<input type="text" id="num1" name="num1"><br><br>
+			<label for="num2">Second number:</label>
+			<input type="text" id="num2" name="num2"><br><br>
+</form>
+		<p>
+		<button onclick="document.getElementById('num1'). value='irgendwos'">
+			Change the world 1
+		</button>
+		<button onclick="add2Numbers()">
+			+
+		</button>
+		<button onclick="subtrac2Numbers()">
+			-
+		</button>
+		<button onclick="mult2Numbers()">
+			*
+		</button>
+		<button onclick="div2Numbers()">
+			/
+		</button>
+		<button onclick="avr2Numbers()">
+			Ø
+		</button>
+		<button onclick="pot()">
+			xⁿ
+		</button>
+		<button onclick="root()">
+			n&#8730
+		</button>
+		
+		</p>
+		<p id="result" >
+		</p>
+	</body>
+</html>	
+rainer Andre (rainer.andre@htleisenstadt.at)
